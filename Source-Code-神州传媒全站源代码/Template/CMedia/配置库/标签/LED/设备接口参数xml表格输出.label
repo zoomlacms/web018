@@ -1,0 +1,42 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>702</LabelID>
+    <LabelName>设备接口参数xml表格输出</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>LED</LabelCate>
+    <LabelDesc />
+    <LabelParam>Title,默认值,1,标题信息传入|NodeID,0,1,节点ID</LabelParam>
+    <LabelTable>{table1}.dbo.ZL_CommonModel left join {table1}.dbo.ZL_C_LED on {table1}.dbo.ZL_CommonModel.ItemID={table1}.dbo.ZL_C_LED.ID</LabelTable>
+    <LabelField>{table1}.dbo.ZL_CommonModel.Title,{table1}.dbo.ZL_CommonModel.GeneralID,{table1}.dbo.ZL_C_LED.azdq,{table1}.dbo.ZL_C_LED.ID,{table1}.dbo.ZL_C_LED.showModel,{table1}.dbo.ZL_C_LED.szDown,{table1}.dbo.ZL_C_LED.szLopic,{table1}.dbo.ZL_C_LED.szUpdate,onLineVideo,httpUrl,restart,subtitles,empty,sID,Url</LabelField>
+    <LabelWhere>(NodeID=@NodeID or FirstNodeID=@NodeID) and Status=99 and sID='@Title'</LabelWhere>
+    <LabelOrder />
+    <LabelContent>&lt;Table&gt;
+&lt;LED&gt;{Field="sID"/}&lt;/LED&gt;&lt;!--这代表LED传来的SN码--&gt;
+&lt;szLopic&gt;{Field="szLopic"/}&lt;/szLopic&gt;&lt;!--这代表终端启动的图片，前面要补上http://led.szcm360.com/pic/--&gt;
+&lt;szUpdate&gt;{Field="szUpdate"/}&lt;/szUpdate&gt;&lt;!--设备与远程握手的时间--&gt;
+&lt;szDown&gt;{Field="szDown"/}&lt;/szDown&gt;&lt;!--设备与远程同步的时间--&gt;
+&lt;showModel&gt;{Field="showModel"/}&lt;/showModel&gt;&lt;!--展示模式 1 远程网页模式 2 本地视频 3 远程视频--&gt;
+&lt;video&gt;{Field="Url"/}&lt;/video&gt;&lt;!--视频地址--&gt;
+&lt;subtitle&gt;{Field="subtitles"/}&lt;/subtitle&gt;&lt;!--字幕读到则上下分屏显示--&gt;
+&lt;empty&gt;{Field="empty"/}&lt;/empty&gt;&lt;!--清空视频，默认为0不执行，1为执行清空--&gt;
+&lt;restart&gt;{Field="restart"/}&lt;/restart&gt;&lt;!--重启app，默认为0不执行，1为立即重启--&gt;
+&lt;onLineVideo&gt;{$SiteURL/}/{Field="onLineVideo"/}&lt;/onLineVideo&gt;
+&lt;httpUrl&gt;{Field="httpUrl"/}&lt;/httpUrl&gt;&lt;!--网页模式读取地址--&gt;
+&lt;/Table&gt;</LabelContent>
+    <LabelCount>10</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType>CMedia</DataSourceType>
+    <ConnectString />
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>

@@ -1,0 +1,64 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>699</LabelID>
+    <LabelName>全站头部</LabelName>
+    <LabelType>1</LabelType>
+    <LabelCate>静态标签</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable />
+    <LabelField />
+    <LabelWhere />
+    <LabelOrder />
+    <LabelContent>&lt;div id="top" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0"&gt;
+&lt;div class="navbar navbar-default borderno"&gt;
+&lt;div class="navbar navbar-static-top borderno" role="navigation" id="scolls"&gt;
+&lt;div class="container"&gt;
+&lt;div class="navbar-header"&gt;
+&lt;a href="/"&gt;&lt;img src="{$CssDir/}images/logo.jpg" alt="神舟传媒" /&gt;&lt;/a&gt;
+&lt;button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"&gt;
+&lt;span class="sr-only"&gt;Toggle navigation&lt;/span&gt;
+&lt;span class="icon-bar"&gt;&lt;/span&gt;
+&lt;span class="icon-bar"&gt;&lt;/span&gt;
+&lt;span class="icon-bar"&gt;&lt;/span&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class="navbar-collapse collapse"&gt;
+&lt;ul class="nav navbar-nav pNav"&gt;
+&lt;li&gt;&lt;a href="/" target="_blank"&gt;首页&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(7)/}" target="_blank"&gt;产品中心&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(2)/}" target="_blank"&gt;神推系统&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(3)/}" target="_blank"&gt;智屏体验&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(4)/}" target="_blank"&gt;万商联盟&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(54)/}" target="_blank"&gt;关于我们&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(6)/}" target="_blank"&gt;帮助中心&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="search"&gt;
+&lt;form action="search/SearchList.aspx" method="get"&gt;
+&lt;div class="input-group pull-right" style="width:200px;"&gt;
+&lt;input name="keyword" type="text" value="全站搜索" id="TxtKeyword" class="form-control" onclick="setEmpty(this)" onblur="settxt(this)" style="width:150px;" /&gt;
+&lt;span class="input-group-btn"&gt;&lt;input type="submit" name="ButtonSo" value="搜  索" id="ButtonSo" class="btn btn-default" /&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;!--top end--&gt;
+&lt;!-- 导航到此结束 --&gt;</LabelContent>
+    <LabelCount />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType />
+    <ConnectString />
+  </Table>
+</NewDataSet>

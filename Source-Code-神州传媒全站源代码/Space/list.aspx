@@ -1,0 +1,1 @@
+﻿<%@ page language="C#" autoeventwireup="true" inherits="Space_list, App_Web_sfcpqinv" enableviewstatemac="false" enableEventValidation="false" viewStateEncryptionMode="Never" %>

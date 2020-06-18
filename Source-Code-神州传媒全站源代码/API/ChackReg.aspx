@@ -1,0 +1,1 @@
+﻿<%@ page language="C#" autoeventwireup="true" inherits="API_ChackReg, App_Web_x5geoe2d" enableviewstatemac="false" enableEventValidation="false" viewStateEncryptionMode="Never" %>

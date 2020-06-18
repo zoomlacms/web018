@@ -1,0 +1,1 @@
+﻿<%@ page language="C#" autoeventwireup="true" inherits="Common_GetGroupMoney, App_Web_zp3evc05" enableviewstatemac="false" enableEventValidation="false" viewStateEncryptionMode="Never" %>

@@ -1,0 +1,145 @@
+﻿<%@ master language="C#" autoeventwireup="true" inherits="Plat_Main, App_Web_1rq5qqwn" clientidmode="Static" %>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--[if lt IE 9]>
+	    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="/dist/css/bootstrap.min.css" />
+    <script type="text/javascript" src="/JS/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="/dist/js/bootstrap.min.js"></script>
+    <asp:ContentPlaceHolder ID="Head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">    
+        <div id="mainTop">
+        <div style="margin-left:55%;">
+            <div style="float:left;margin-right:10px;">
+                <span class="glyphicon glyphicon-home topIcon" title="首页"></span>
+                <span class="glyphicon glyphicon-user topIcon" title="用户中心"></span>
+                <span class="glyphicon glyphicon-envelope topIcon" title="信息中心"></span>
+            </div>
+            <div class="input-group" style="width:260px;padding-top:5px;">
+                <input type="text" id="keyWord" style=" margin-top:0px;" class="form-control" placeholder="智能搜索..." />
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"  style="color:black;"></span></button>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div id="mainCenter">
+        <div id="mainCenter_Left">
+            <div>
+                <div class="titleDiv">开放沟通</div>
+                <ul class="menuul">
+                    <li><span class="glyphicon glyphicon-envelope" style=" color:#06F"></span><a href="/Plat/Blog/">信息中心</a></li>
+                    <li><span class="glyphicon glyphicon-search" style=" color:#06F"></span><a href="/Plat/Blog/?Filter=Colled">我的收藏</a></li>
+                    <li><span class="glyphicon glyphicon-cog" style=" color:#06F"></span><a href="/Plat/Group/MyGroup.aspx">我的群组</a></li>
+                </ul>
+            </div>
+            <div>
+                <div class="titleDiv">任务协作</div>
+                <ul class="menuul">
+                    <li><span class="glyphicon glyphicon-star" style=" color:#06F"></span><a href="/Plat/Task/">任务中心</a></li>
+                    <li> <span class="glyphicon glyphicon-envelope" style=" color:#06F"></span><a href="/Plat/Blog/DailyPlan.aspx">日程管理</a></li>
+                </ul>
+            </div>
+            <div>
+                <div class="titleDiv">知识管理</div>
+                <ul class="menuul">
+                    <li><span class="glyphicon glyphicon-search" style=" color:#06F"></span><a href="/Plat/Blog/DocCenter.aspx">文档中心</a></li>
+                    <li><span class="glyphicon glyphicon-cog" style=" color:#06F"></span><a href="#MyFav">预留位置</a></li>
+                    <li><span class="glyphicon glyphicon-envelope" style=" color:#06F"></span><a href="#MyGroup">预留位置</a></li>
+                </ul>
+            </div>
+            <div>
+                <div class="titleDiv">预留位置</div>
+                <ul class="menuul">
+                    <li><span class="glyphicon glyphicon-search" style=" color:#06F"></span><a href="#DynamicUpdate">预留位置</a></li>
+                    <li><span class="glyphicon glyphicon-home" style=" color:#06F"></span><a href="#MyFav">预留位置</a></li>
+                    <li><span class="glyphicon glyphicon-star" style=" color:#06F"></span><a href="#MyGroup">预留位置</a></li>
+                </ul>
+            </div>
+            <div>
+                <div class="titleDiv">预留位置</div>
+                <ul class="menuul">
+                    <li><span class="glyphicon glyphicon-th-large" style=" color:#06F"></span><a href="#DynamicUpdate">预留位置</a></li>
+                    <li><span class="glyphicon glyphicon-search" style=" color:#06F"></span><a href="#MyFav">预留位置</a></li>
+                    <li><span class="glyphicon glyphicon-home" style=" color:#06F"></span><a href="#MyGroup">预留位置</a></li>
+                </ul>
+            </div>
+            <div>
+                <div class="titleDiv">预留位置</div>
+                <ul class="menuul">
+                    <li><span class="glyphicon glyphicon-home" style=" color:#06F"></span><a href="#DynamicUpdate">预留位置</a></li>
+                    <li><span class="glyphicon glyphicon-search" style=" color:#06F"></span><a href="#MyFav">预留位置</a></li>
+                    <li><span class="glyphicon glyphicon-th-large" style=" color:#06F"></span><a href="#MyGroup">预留位置</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="mainCenter_Middle">
+            <asp:ContentPlaceHolder id="Content" runat="server"></asp:ContentPlaceHolder>
+        </div>
+        <div id="mainCenter_Right">
+            <div>
+                <div style="text-align:center;float:left;margin-right:5px;">
+                    <img class="userFaceImg" src="/Images/userface/noface.gif" /></div>
+                <div>
+                    <div style="padding-top: 10px;">徐林</div>
+                    <div style="padding-top:10px;">积分:<span style="color: #0066cc;">565</span></div>
+                </div>
+            </div>
+            <div style="clear:both;"></div>
+            <div>
+                <div class="rightTitle">小纸条</div>
+                <div class="rightContent"></div>
+            </div>
+            <div>
+                <div class="rightTitle">任务区</div>
+                <div class="rightContent"></div>
+            </div>
+            <div>
+                <div class="rightTitle">日历区</div>
+                <div class="rightContent"></div>
+            </div>
+            <div>
+                <div class="rightTitle">最新消息</div>
+                <div class="rightContent"></div>
+            </div>
+            <div>
+                <div class="rightTitle">最新资讯</div>
+                <div class="rightContent"></div>
+            </div>
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+     <style type="text/css">
+        body {font-size:12px;font-family:'Microsoft YaHei';margin:0px;}
+        #mainTop {height: 45px;width: 100%; cursor: default; background-color: #0066cc;position:fixed;top:0px;left:0px;border-bottom:2px solid black;z-index:9999;}
+        #mainCenter {margin-top:55px;width:80%;margin-left:10%;}
+        #mainCenter_Left {width:10%;float:left;}
+        #mainCenter_Middle {width: 74%;float:left;margin-left: 10px;}
+        #mainCenter_Right {width:15%;float:right;padding:3px;}
+        #EGV tr th,#EGV tr td,#Egv tr th,#Egv tr td{text-align:center;vertical-align:middle;}
+        #txtPage {width:30px;height:22px;line-height:22px;text-align:center;}
+        .menuul{padding-top:10px;padding-left:10px;list-style:none;text-align:center;}
+        .titleDiv {height:30px;border-bottom:1px dashed black;line-height:30px;text-align:center; font-size:16px;}
+        .rightTitle {height: 30px;border-bottom: 1px dashed black;line-height: 30px;text-align: center;}
+        .rightContent {height:80px;}
+        .topIcon {font-size:1.5em;color:white;cursor:pointer;margin-left:5px;line-height:45px;}
+        .userFaceImg {width: 60px;height: 60px;}
+        .msgOP {border-top:1px solid gray;padding:5px;}
+        .glyphicon {color:white;}
+        .form-control {display:inline;width:260px;max-width:260px; margin-top:7px;}
+        .nav_searchDiv {text-align:right; margin-top:10px;margin-bottom:10px;}
+		#mainCenter_Left ul li a{ font-size:14px; margin-left:10px; line-height:30px;}
+    </style>
+        <asp:ContentPlaceHolder runat="server" ID="ScriptContent"></asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

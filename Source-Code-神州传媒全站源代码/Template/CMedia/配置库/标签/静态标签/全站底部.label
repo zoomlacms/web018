@@ -1,0 +1,38 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>700</LabelID>
+    <LabelName>全站底部</LabelName>
+    <LabelType>1</LabelType>
+    <LabelCate>静态标签</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable />
+    <LabelField />
+    <LabelWhere />
+    <LabelOrder />
+    <LabelContent>&lt;!--底部--&gt;
+&lt;div class="foot col-lg-12 col-md-12 col-sm-12 col-xs-12"&gt;
+&lt;div class="container"&gt;
+&lt;div class="pull-left"&gt;&lt;p&gt;Copyright @ 2014 版权所有：江西神州文化传媒有限公司   电话：0791-69999999 / 8855555&lt;/p&gt;&lt;/div&gt;
+&lt;div class="pull-right"&gt;分享到：
+&lt;a class="sina" name="share" title="" href="#"&gt;sina&lt;/a&gt;
+&lt;a class="tencent" name="share" title="" href="#"&gt;tencent&lt;/a&gt;
+&lt;a class="kaixin" name="share" title="" href="#"&gt;kaixin&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;!--foot end--&gt;</LabelContent>
+    <LabelCount />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType />
+    <ConnectString />
+  </Table>
+</NewDataSet>

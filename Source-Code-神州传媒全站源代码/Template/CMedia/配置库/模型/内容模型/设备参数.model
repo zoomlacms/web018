@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <ModelID>26</ModelID>
+    <ModelName>设备参数</ModelName>
+    <Description />
+    <TableName>ZL_C_LED</TableName>
+    <ItemName>设备</ItemName>
+    <ItemUnit>台</ItemUnit>
+    <ItemIcon>video.gif</ItemIcon>
+    <ModelType>1</ModelType>
+    <ContentModule>内容页/默认设备参数内容页.html</ContentModule>
+    <MultiFlag>true</MultiFlag>
+    <IsNull>true</IsNull>
+    <NodeID>0</NodeID>
+    <SysModel>1</SysModel>
+    <FromModel>0</FromModel>
+    <Thumbnail>0</Thumbnail>
+    <Islotsize>false</Islotsize>
+  </Table>
+</NewDataSet>
